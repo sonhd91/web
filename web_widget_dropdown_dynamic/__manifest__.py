@@ -13,11 +13,10 @@
     "installable": True,
     "assets": {
         "web.assets_backend": [
-            "web_widget_dropdown_dynamic/static/src/js/basic_model.js",
-            "web_widget_dropdown_dynamic/static/src/js/field_dynamic_dropdown.js",
+            "web_widget_dropdown_dynamic/**/*",
         ],
-        "web.qunit_suite_tests": [
-            "web_widget_dropdown_dynamic/static/tests/web_widget_dropdown_dynamic_tests.js"
+        'web.qunit_suite_tests': [
+            'web_widget_dropdown_dynamic/static/tests/*.js',
         ],
     },
 }
