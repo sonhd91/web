@@ -41,6 +41,16 @@ odoo.define("web_widget_dropdown_dynamic.basic_model", function (require) {
                 model: model,
                 method: method,
                 context: context,
+            }).then(function (result) {
+                result = result.map((val_updated) => {
+                    return val_updated.map((e) => {
+                        if (typeof e !== "string") {
+                            return String(e);
+                        }
+                        return e;
+                    });
+                });
+                return result;
             });
         },
     });

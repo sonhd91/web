@@ -15,8 +15,8 @@
         "web.assets_backend": [
             "web_widget_dropdown_dynamic/**/*",
         ],
-        'web.qunit_suite_tests': [
-            'web_widget_dropdown_dynamic/static/tests/*.js',
+        "web.qunit_suite_tests": [
+            "web_widget_dropdown_dynamic/static/tests/*.js",
         ],
     },
 }
